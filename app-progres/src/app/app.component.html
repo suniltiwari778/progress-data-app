@@ -1,0 +1,32 @@
+<div class="container">
+    <h2>Progress Bar</h2>   
+    
+    <progress-bar [progress]="currentNumber" [color]="'#488aff'" >
+    </progress-bar>
+
+</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+       <span>Please select the bar:</span>
+        <select>
+            <option value="0">bar1</option>
+            <option value="1">bar2</option>
+            <option value="2">bar3</option>
+        </select>
+    </div>	
+
+    <div class="col-sm-12">
+        <span class="bg-info">Click the buttons to change the bar:</span>
+        <div *ngFor="let barData of barDataListButtons">
+             
+            <div>
+                <button (click)="updateProgress(barData)">{{barData}}</button>
+            </div> 
+        </div>
+     
+    </div>
+
+</div>
+    
+<router-outlet></router-outlet>

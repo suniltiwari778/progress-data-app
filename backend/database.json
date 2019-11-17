@@ -1,0 +1,19 @@
+{
+    "bardata" : [{
+            "buttons": [
+				10,
+				38,
+				-13,
+				-18
+			],
+           	"bars": [
+				62,
+				45,
+				62
+			],
+            "barlimit" : "120",
+            "progressbarMin" : "0"
+        }
+    ]
+   
+}
